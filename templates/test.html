@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} {{ name }} {% endblock %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        {% for wall in wallpapers %}
+            <div class="col-lg-2">
+             <img  src="media/{{ wall.wallpaper_file }}"/>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

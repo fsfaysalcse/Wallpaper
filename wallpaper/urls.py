@@ -5,5 +5,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('',index),
+    path('',index_view),
+    path('details/<int:id>',details_view),
 ]

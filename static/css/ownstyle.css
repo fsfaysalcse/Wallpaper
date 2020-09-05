@@ -1,0 +1,100 @@
+
+        .hnymaG {
+            --grid-column: 3;
+            display: grid;
+            grid-template-columns:repeat(var(--grid-column), 1fr);
+            grid-gap: 16px;
+            grid-auto-flow: dense;
+        }
+
+        @media (min-width: 961px) and (max-width: 1160px) {
+            .hnymaG {
+                --grid-column: 4;
+            }
+        }
+
+        @media (min-width: 1161px) and (max-width: 1315px) {
+            .hnymaG {
+                --grid-column: 5;
+            }
+        }
+
+        @media (min-width: 1316px) and (max-width: 1515px) {
+            .hnymaG {
+                --grid-column: 6;
+            }
+        }
+
+        @media (min-width: 1516px) {
+            .hnymaG {
+                --grid-column: 7;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hnymaG {
+                grid-gap: 8px;
+            }
+        }
+
+        .kfpCqg {
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .kfpCqg::after {
+            padding-top: calc(372 / 208 * 100%);
+            display: block;
+            content: '';
+        }
+
+        .hEYZfQ {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .fsyaGw {
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            border-radius: 6px;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.6) 100%), url(https://fsb.zobj.net/crop.php?r=6Htmu-F0LjByaxDd2xakezB9TAvSNzt-eAW1lPzCkFfltOq-8cgqHVf1PqNuf3Qj7VuTakk0PkXJEDp85HlXpxx6phFZcEmNFCZd2FetQKWr0YozRjn3KfpfvaL9T0n8bBwIeUOQCc-spD-_qTC0koWd5l1W4ERJMAUo4GoMbxi70yRTAVHTvTI6sRJiG3Ld4S7DHicXRKkxSISN);
+            object-fit: cover;
+            background-size: 100% 100%;
+        }
+
+        .igLGYr {
+            color: white;
+            text-wrap: normal;
+            bottom: 16px;
+            left: 16px;
+            position: absolute;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            font-family: "Noto Mono";
+        }
+
+        @media (max-width: 767px) {
+            .igLGYr {
+                font-size: 11px;
+                bottom: 8px;
+                left: 8px;
+            }
+        }

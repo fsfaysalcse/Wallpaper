@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title data-rh="true">Wallpapers Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/ownstyle.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+</head>
+
+<body style="background: #0f0f0f">
+
+<nav>
+    <div class="logo">
+        <a href="index.html">{{ name }}<em> WALLPAPERS</em></a>
+    </div>
+</nav>
+
+<div style="margin-top: 100px;">
+    <div class="hnymaG" style="margin: 30px;">
+
+        {% for wall in wallpapers %}
+
+            <div class="kfpCqg">
+                <div class="hEYZfQ">
+                    <img src="/media/{{ wall.wallpaper_file }}" class="fsyaGw">
+                    <a class="igLGYr" href="/media/{{ wall.wallpaper_file }}">{{ wall.title }}</a></div>
+            </div>
+
+        {% endfor %}
+
+
+    </div>
+</div>
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default,es5,es6,fetch,Object.entries,Object.values,Array.prototype.includes"></script>
+<script id="__LOADABLE_REQUIRED_CHUNKS__" type="application/json">[]</script>
+<script async data-chunk="browse" src="https://marketing.zobj.net/browse.7de61bcf0deb0f211875.js"></script>
+</body>
+
+</html>
