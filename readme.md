@@ -2,7 +2,13 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-FSWALLI is wallpaper downloader website . This website developed by python & django framewark.How to install this source code on your pc. Please follow the rules below to install this source code .
+FSWALLI is wallpaper downloader website . This website developed by python & django framework. Here is demo
+
+![alt text](https://image.prntscr.com/image/8dvW48JGSo6RzWFwUqP-3A.png)
+
+![alt text](https://image.prntscr.com/image/pg-WxNawSWCsRtwniX5Kyw.png)
+
+
 
  ### Project Setup
 
