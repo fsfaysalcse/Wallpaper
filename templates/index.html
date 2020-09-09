@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Amoled Wallpaper</title>
+    <title>Wallpaper</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -27,7 +27,7 @@
 
 <nav>
     <div class="logo">
-        <a href="index.html">Amoled<em> Wallpaper</em></a>
+        <a style="color: white" href="#">Wallpaper<em> APP </em></a>
     </div>
 </nav>
 
@@ -37,7 +37,7 @@
         {% for category in categories %}
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="media/{{ category.category_thumb }}" data-lightbox="image-1">
+                  <a href="{% url 'details' category.pk %}" data-lightbox="image-1">
                         <div class="thumb">
                             <div class="hover-effect">
                                 <div class="hover-content">
@@ -45,7 +45,7 @@
                                     <p>Awesome Wallpapers Goes Here</p>
                                 </div>
                             </div>
-                            <div class="image">
+                            <div class="image divimage">
                                 <img style="width: 100%; height: 380px;" src="media/{{ category.category_thumb }}">
                             </div>
                         </div>
@@ -57,13 +57,13 @@
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}"><\/script>')</script>
-
-<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
-
-<script src="{% static 'js/plugins.js' %}"></script>
-<script src="{% static 'js/main.js' %}"></script>
+{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>#}
+{#<script>window.jQuery || document.write('<script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}"><\/script>')</script>#}
+{##}
+{#<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>#}
+{##}
+{#<script src="{% static 'js/plugins.js' %}"></script>#}
+{#<script src="{% static 'js/main.js' %}"></script>#}
 
 
 </body>

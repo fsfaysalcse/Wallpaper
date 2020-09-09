@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/ownstyle.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -19,22 +20,36 @@
 
 <nav>
     <div class="logo">
-        <a href="index.html">{{ name }}<em> WALLPAPERS</em></a>
+        <a style="color: white" href="index.html">{{ name }}<em> WALLPAPERS</em></a>
     </div>
 </nav>
+
+{% if wallpapers %}
+{% else %}
+    <div style="width: 500px; margin-left:auto; margin-right:auto; margin-top: 100px">
+        <div class="alert alert-success" style="width: auto; text-align: center;" role="alert">
+            No wallpapers found ! Please try some another category ❤️️
+        </div>
+    </div>
+{% endif %}
 
 <div style="margin-top: 100px;">
     <div class="hnymaG" style="margin: 30px;">
 
-        {% for wall in wallpapers %}
 
-            <div class="kfpCqg">
-                <div class="hEYZfQ">
-                    <img src="/media/{{ wall.wallpaper_file }}" class="fsyaGw">
-                    <a class="igLGYr" href="/media/{{ wall.wallpaper_file }}">{{ wall.title }}</a></div>
-            </div>
+        {% if wallpapers %}
+            {% for wall in wallpapers %}
 
-        {% endfor %}
+                <div class="kfpCqg">
+                    <div class="hEYZfQ">
+                        <img src="{{ wall.wallpaper_file }}" class="fsyaGw">
+                        <a class="igLGYr" href="/media/{{ wall.wallpaper_file }}">{{ wall.title }}</a>
+                    </div>
+
+                </div>
+
+            {% endfor %}
+        {% endif %}
 
 
     </div>
